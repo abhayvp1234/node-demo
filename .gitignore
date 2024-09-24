@@ -1,0 +1,64 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+
+# Output of npm pack
+*.tgz
+
+# Compiled source (e.g. TypeScript)
+dist/
+build/
+
+# Cache directories
+.cache/
+.nyc_output/
+coverage/
+
+# IDEs and editors
+.vscode/
+.idea/
+.DS_Store
+
+# Optional npm cache directory
+.npm/
+
+# Optional yarn cache directory
+.yarn/
+
+# Ignore next.js build output
+.next/
+
+# OS generated files
+Thumbs.db
+.DS_Store
+
+# Logs in public folder
+public/logs/
+
+# Temporary files
+tmp/
+temp/
+
+# SFTP deployment
+.sftp-config.json
+
+# Redis dumps
+dump.rdb
+
+# MongoDB
+*.lock

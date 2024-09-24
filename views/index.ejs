@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User List</h1>
+        <a href="/users/new">Create New User</a>
+        <ul>
+            <% users.forEach(user => { %>
+                <li>
+                    <strong><%= user.name %></strong> (Email: <%= user.email %>, Age: <%= user.age %>)
+                    <div>
+                        <a href="/users/edit/<%= user.id %>">Edit</a>
+                        <form action="/users/delete/<%= user.id %>" method="POST" style="display:inline;">
+                            <button type="submit" class="delete">Delete</button>
+                        </form>
+                    </div>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>

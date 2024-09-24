@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* User List Styles */
+ul li {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li form {
+    display: inline;
+}
+
+/* Button Styles */
+button, a {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, a:hover {
+    background-color: #0056b3;
+}
+
+button.delete {
+    background-color: #FF4136;
+}
+
+button.delete:hover {
+    background-color: #c73024;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #28a745;
+    align-self: flex-start;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Link Styles */
+a {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Centering container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+}

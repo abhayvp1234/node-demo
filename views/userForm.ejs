@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= user ? 'Edit User' : 'Create New User' %></title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><%= user ? 'Edit User' : 'Create New User' %></h1>
+        <form action="<%= user ? '/users/edit/' + user.id : '/users' %>" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="<%= user ? user.name : '' %>" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" value="<%= user ? user.email : '' %>" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" value="<%= user ? user.age : '' %>" required>
+            
+            <button type="submit"><%= user ? 'Update' : 'Create' %></button>
+        </form>
+        <br>
+        <a href="/users">Back to List</a>
+    </div>
+</body>
+</html>
